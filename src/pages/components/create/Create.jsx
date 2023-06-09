@@ -46,7 +46,7 @@ export const Create = () => {
             setDiscardPost(true)
         }
     }
-
+    
     return (
         isCreate ?
 
