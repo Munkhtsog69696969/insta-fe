@@ -43,10 +43,10 @@ export const Create = () => {
         if(next){
             setNext(false);
         }else{
-            setDiscardPost(true)
+            setDiscardPost(true);
         }
     }
-    
+
     return (
         isCreate ?
 
