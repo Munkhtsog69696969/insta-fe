@@ -1,0 +1,197 @@
+.container{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0 , 0.7);
+}
+
+.whiteBox{
+    background-color: rgba(255,255,255,1);
+    width: 50%;
+    height: 75%;
+    border-radius: 15px;
+    z-index: 10;
+}
+
+.whiteBoxNext{
+    background-color: rgba(255,255,255,1);
+    width: 70%;
+    height: 75%;
+    border-radius: 15px;
+    z-index: 10;
+}
+
+.textCont{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8%;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+}
+
+.back{
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.share{
+    position: absolute;
+    color: #0095F6;
+    right: 10px;
+    /* border: 1px solid red; */
+    padding: 5px;
+}
+
+.cont{
+    /* border: 1px solid blue; */
+    display: flex;
+    width: 100%;
+    height: 86%;
+}
+
+.contNext{
+    /* border: 1px solid blue; */
+    display: grid;
+    width: 100%;
+    height: 86%;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.main{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainNext{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.postDescCont{
+    border: 1px solid green;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.profile{
+    border: 1px solid red;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.postText{
+    border: none;
+    resize: none;
+}
+
+.postText:focus{
+    outline: none;
+}
+
+.addPhotos{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon{
+    font-size: 150px;
+}
+
+.text{
+    font-size: 22px;
+    /* font-weight: 500; */
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+.button{
+    background-color: #0095F6;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.fileInput{
+    display: none;
+}
+
+.filesContainer{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.imageCont{
+    width: 300px;
+    height: 300px;
+    /* border: 1px solid red; */
+}
+
+.image{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.video{
+    width: 300px;
+    height: 300px;
+}
+
+.addFile{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    background-color: rgb(43, 43, 43);
+    bottom: 10px;
+    right: 10px;
+    color: white;
+}

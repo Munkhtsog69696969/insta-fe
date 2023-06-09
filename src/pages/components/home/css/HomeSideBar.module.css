@@ -1,0 +1,231 @@
+.container{
+    /* border: 5px solid red; */
+    display: flex;
+}
+
+.sideBar{
+    border: 1px solid rgb(209, 209, 209);
+    width: 242px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: 0.2s;
+    /* z-index: 3; */
+}
+
+.sideBarSmall{
+    border: 1px solid rgb(209, 209, 209);
+    width: 70px;
+    position: relative;
+    transition: 0.2s;
+    /* z-index: 3; */
+}
+
+.sideBarLogoCont{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideBarLogo{
+    content: url("../images/bigLogo.png");
+    width: 110px;
+    height: auto;
+    transition: 0.2s;
+}
+
+.sideBarLogoSmall{
+    content: url("../images/smallLogo.png");
+    width: 23px;
+    height: auto;
+    transition: 0.2s;
+}
+
+.sideBarMid{
+    /* border: 1px solid blue; */
+    /* height: 500px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.midElement{
+    /* border: 1px solid green; */
+    border-radius: 8px;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.midElementSmall{
+    border-radius: 8px;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.midElement:hover{
+    background-color: rgb(233, 233, 233);
+    transition: 0.2s;
+}
+
+.midElementSmall:hover{
+    background-color: rgb(233, 233, 233);
+    transition: 0.2s;
+}
+
+.icon{
+    font-size: 27px;
+    margin-left: 6px;
+}
+
+.iconSmall{
+    font-size: 27px;
+    margin-left: 0px;
+}
+
+.text{
+    margin-left: 10px;
+}
+
+.textSmall{
+    display: none;
+    width: 0px;
+}
+
+.optionContainer{
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.invisible{
+    left: -397px;
+    position: absolute;
+    transition: 0.2s;
+    position: absolute;
+    left: -397px;
+    width: 397px;
+    height: 100%;
+    border-radius: 0px 18px 18px 0px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.6s;
+    box-shadow: 11px 2px 12px -7px rgba(0,0,0,0.17);
+-webkit-box-shadow: 11px 2px 12px -7px rgba(0,0,0,0.17);
+-moz-box-shadow: 11px 2px 12px -7px rgba(0,0,0,0.17);
+}
+
+.secondSideBar{
+    /* border: 1px solid blue; */
+    position: absolute;
+    left: 70px;
+    width: 397px;
+    height: 100%;
+    border-radius: 0px 18px 18px 0px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.6s;
+    box-shadow: 11px 2px 12px -7px rgba(0,0,0,0.17);
+-webkit-box-shadow: 11px 2px 12px -7px rgba(0,0,0,0.17);
+-moz-box-shadow: 11px 2px 12px -7px rgba(0,0,0,0.17);
+}
+
+.searchContainer{
+    border:1px solid rgb(233, 233, 233);
+    border-radius: 0px 18px 0px 0px;
+    height: 115px;
+    padding: 20px;
+}
+
+.searchText{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.searchInput{
+    width: 95%;
+    border: none;
+    background-color: rgb(235, 235, 235);
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.searchedPeopleContainer{
+    /* border: 1px solid blue; */
+    overflow-y: auto;
+    height: 100%;
+    border-radius: 0px 0px 18px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.recentContainer{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.recentText{
+    font-weight: 500;
+}
+
+.recentTextBlue{
+    color: #0095F6;
+    font-weight: 500;
+}
+
+.searchedPeople{
+
+}
+
+@media only screen and (max-width: 1264px) {
+    .sideBar{
+        width: 70px;
+    }
+
+    .sideBarLogo{
+        content: url("../images/smallLogo.png");
+        width: 23px;
+        height: auto;
+        transition: 0.2s;
+    }
+
+    .text{
+        display: none;
+        width: 0px;
+    }
+
+    .midElement{
+        justify-content: center;
+    }
+
+    .icon{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .container{
+        display: none;
+    }
+}
